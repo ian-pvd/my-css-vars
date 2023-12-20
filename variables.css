@@ -1,7 +1,8 @@
 /**
  * My CSS Variables
  *
- * A plea for sane default variables with clearly defined contexts.
+ * Simple and sane default variables with clearly defined contexts.
+ *
  * Use these variable names consistently across your projects to avoid guesswork.
  * Add or remove variables, and change the values as needed.
  *
@@ -28,14 +29,14 @@
 	--ff-sans-serif: Helvetica, sans-serif;
 
 	/* Font Sizes */
-	--fs-xsmall: 0.75rem; // 12px
-	--fs-small: 0.875rem; // 14px
-	--fs-base: 1rem; // 16px
-	--fs-medium: 1.25rem; // 20px
-	--fs-large: 1.5rem; // 24px
-	--fs-xlarge: 1.75rem; // 28px
-	--fs-xxlarge: 1.875rem; // 30px
-	--fs-xxxlarge: 2rem; // 32px
+	/* 12px */ --fs-xsmall: 0.75rem;
+	/* 14px */ --fs-small: 0.875rem;
+	/* 16px */ --fs-base: 1rem;
+	/* 20px */ --fs-medium: 1.25rem;
+	/* 24px */ --fs-large: 1.5rem;
+	/* 28px */ --fs-xlarge: 1.75rem;
+	/* 30px */ --fs-xxlarge: 1.875rem;
+	/* 32px */ --fs-xxxlarge: 2rem;
 
 	/* Font Weights */
 	--fw-lighter: 300;
@@ -53,11 +54,11 @@
 	--font-body: var(--fw-normal) var(--fs-base) / var(--lh-base) var(--ff-serif);
 
 	/* Line Height */
-	--lh-small: 1;
-	--lh-base: calc(7 / 6); // 1.167
-	--lh-medium: calc(4 / 3); // 1.333
-	--lh-large: calc(4 / 3); // 1.333
-	--lh-xlarge: calc(5 / 3); // 1.667
+	/* 1.000 */ --lh-small: 1;
+	/* 1.167 */ --lh-base: calc(7 / 6);
+	/* 1.333 */ --lh-medium: calc(4 / 3);
+	/* 1.333 */ --lh-large: calc(4 / 3);
+	/* 1.667 */ --lh-xlarge: calc(5 / 3);
 }
 
 /* Layout */
@@ -78,13 +79,16 @@
 	--w-content-max: 64rem;
 
 	/* Viewport Width */
-	--viewport-width: 100vw; // Checks for scrollbar via setViewportWidth() JS.
+	--viewport-width: 100vw; /* Checks for scrollbar via setViewportWidth() JS. */
 }
 
 /* Customizations */
 :root {
+	/* Time Durations */
+	--duration-default: 225ms;
+
 	/* Transitions */
-	--ts-default: 225ms;
+	--t-default: none var(--duration-default) ease-in-out;
 
 	/* Etc. */
 	--box-style: var(--border-default);

@@ -1,6 +1,6 @@
 # My CSS Variables
 
-A plea for simple and sane default variables with clearly defined contexts.
+Simple and sane default variables with clearly defined contexts.
 
 Use these variable names consistently across your projects to avoid guesswork. Add or remove variables, and change the values as needed.
 
